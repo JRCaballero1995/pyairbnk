@@ -345,7 +345,7 @@ def parse_advertisement_data(
     opens_clockwise = bool(state_flags & 0x80)
 
     if opens_clockwise and lock_state in (LOCK_STATE_LOCKED, LOCK_STATE_UNLOCKED):
-        lock_state = 1 - lock_state
+        #lock_state = 1 - lock_state
 
     return AdvertisementData(
         serial_number=serial_number,
